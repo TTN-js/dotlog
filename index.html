@@ -41,7 +41,7 @@
 			</div>
 		</header>
 
-	
+		<!-- body -->
 		<div id="body" class="row">
 			<!-- latest -->
 			<div id="latest_entries" class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
@@ -149,34 +149,95 @@
 					    <hr>
 					</article>			
 				</div>
+				<ul id="pagination">
+				    <li id="previous">
+				        <a>← Previous</a>
+				    </li>
+				    <li id="next">
+				        <a href="#">Next →</a>
+				    </li>
+				</ul>
 			</div>
 			<!-- sidebar -->
 			<div id="sidebar" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-				<div id="subscribe">
-					<img src="images/nav_logo.png" id="scribe_logo"><br>
-					Celebrate the little wins!
-					<br>Subscirbe Today<br>
-					<button>SUBSCRIBE</button>
-				</div>
-				<!-- popular -->
-				<div id="pop_entries">
-					Popular
-					<div class="bar"></div>
-				</div>
-				<!-- archive -->
-				<div id="archive">
-					Archive
-					<div class="bar"></div>
-				</div>
+				<!-- <div id=fixed_side> -->
+					<div id="subscribe">
+						<img src="images/nav_logo.png" id="scribe_logo"><br>
+						Celebrate the little wins!
+						<br>Subscirbe Today<br>
+						<button>SUBSCRIBE</button>
+					</div>
+					<!-- popular -->
+					<div id="pop_entries">
+						Popular by Most
+						<div class="bar"></div>
+
+						<ul class="tabs">
+							<li class="tab-link current" data-tab="tab-1">Views</li>
+							<li class="tab-link" data-tab="tab-2">Comments</li>
+							<li class="tab-link" data-tab="tab-3">Shares</li>
+						</ul>
+
+						<div id="tab-1" class="tab-content current">
+							<ol>
+								<li><a href="#">BBQ Is Your Worst Enemy. 8 Ways To Defeat It</a></li>
+								<li><a href="#">Apply These 6 Secret Techniques To Improve Life</a></li>
+								<li><a href="#">Iaculis Euismod Dui</a></li>
+								<li><a href="#">Nulla Quis Vehicula</a></li>
+								<li><a href="#">Everyone Loves Family</a></li>
+								<li><a href="#">The Hidden Mystery Behind Programmers<</a></li>
+								<li><a href="#">Nostra Commodo Consectetur Quam</a></li>
+								<li><a href="#">Magna Himenaeos Ante Massa Curae</a></li>
+								<li><a href="#">Ac Elementum Erat Aenean</a></li>
+								<li><a href="#">Landit Porttitor Sociosqu</a></li>
+							</ol>
+						</div>
+						<div id="tab-2" class="tab-content">
+							 <ol>
+								<li><a href="#">Apply These 6 Secret Techniques To Improve Life</a></li>
+								<li><a href="#">Nulla Quis Vehicula</a></li>
+								<li><a href="#">BBQ Is Your Worst Enemy. 8 Ways To Defeat It</a></li>
+								<li><a href="#">Iaculis Euismod Dui</a></li>
+								<li><a href="#">Landit Porttitor Sociosqu</a></li>
+								<li><a href="#">The Hidden Mystery Behind Programmers<</a></li>
+								<li><a href="#">Nostra Commodo Consectetur Quam</a></li>
+								<li><a href="#">Magna Himenaeos Ante Massa Curae</a></li>
+								<li><a href="#">Ac Elementum Erat Aenean</a></li>
+								<li><a href="#">Everyone Loves Family</a></li>
+							</ol>
+						</div>
+						<div id="tab-3" class="tab-content">
+							<ol>
+								<li><a href="#">BBQ Is Your Worst Enemy. 8 Ways To Defeat It</a></li>
+								<li><a href="#">Iaculis Euismod Dui</a></li>
+								<li><a href="#">The Hidden Mystery Behind Programmers<</a></li>
+								<li><a href="#">Apply These 6 Secret Techniques To Improve Life</a></li>
+								<li><a href="#">Nulla Quis Vehicula</a></li>
+								<li><a href="#">Magna Himenaeos Ante Massa Curae</a></li>
+								<li><a href="#">Nostra Commodo Consectetur Quam</a></li>
+								<li><a href="#">Landit Porttitor Sociosqu</a></li>
+								<li><a href="#">Everyone Loves Family</a></li>
+								<li><a href="#">Ac Elementum Erat Aenean</a></li>
+							</ol>
+						</div>
+
+					</div>
+					<!-- archive -->
+					<div id="archive">
+						Archive
+						<div class="bar"></div>
+					</div>
+				<!-- </div> -->
 			</div>
 			
 
 			<!-- foot -->
 			<footer>
 				<div>
-					<div class="bar">
+					<div class="bar" style="margin-top:25px">
 						<p id="cw">Copyright © dotlog 2016. All Rights Reserved.</p> 
 					</div>
+
 				</div>
 			</footer>
 		</div>
@@ -186,6 +247,7 @@
 
 
 		<!-- js -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 	</body>
