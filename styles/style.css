@@ -80,7 +80,17 @@ li, button{
 	text-shadow: 3px 3px 3px rgba(0,0,0,0.9);
 }
 
-#bottom_nav li:hover{
+#bottom_nav a{
+	color: #9B9B9B;
+	text-decoration: none;
+}
+
+/* #bottom_nav a:hover{
+	color: #9B9B9B;
+	text-decoration: none;
+} */
+
+#bottom_nav li:hover, #bottom_nav a:hover{
 	color: white;
 }
 
