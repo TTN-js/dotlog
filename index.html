@@ -10,9 +10,12 @@
 	    <!-- fontawesome  --> 
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
+
 	    <!-- css -->
 	    <link rel="stylesheet" type="text/css" href="styles/style.css">
-	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	   	<!-- Latest compiled and minified CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	    
 
 		<title>dotlog</title>
 		<link rel="icon" type="image/png" href="images/tab_icon.png">
@@ -35,7 +38,7 @@
 					<li>LATEST</li>
 					<li>POPULAR</li>
 					<li>ARCHIVE</li>
-					<li id="subscribe_nav">SUBSCRIBE</li>
+					<li id="subscribe_nav" data-target="#sub_modal" data-toggle="modal">SUBSCRIBE</li>
 					<li>CONTACT</li>
 				</ul>
 			</div>
@@ -55,6 +58,7 @@
 					    <hr>
 					 
 					    <img src="https://source.unsplash.com/random" class="post_img">
+					    <!-- <img src="" class="post_img"> -->
 					 
 					    <br/><br/>
 					 
@@ -75,6 +79,7 @@
 					    <hr>
 					 
 					    <img src="https://source.unsplash.com/category/food" class="post_img">
+					    <!-- <img src="" class="post_img"> -->
 					 
 					    <br/><br/>
 					 
@@ -95,6 +100,7 @@
 					    <hr>
 					 
 					    <img src="https://source.unsplash.com/category/nature" class="post_img">
+					    <!-- <img src="" class="post_img"> -->
 					 
 					    <br/><br/>
 					 
@@ -115,7 +121,8 @@
 					    <hr>
 					 
 					    <img src="https://source.unsplash.com/category/technology" class="post_img">
-					 
+					 	<!-- <img src="" class="post_img"> -->
+
 					    <br/><br/>
 					 
 					    <p class="post_summary">Nulla quis vehicula accumsan malesuada ultrices fringilla nostra erat vestibulum, auctor augue duis eget malesuada faucibus et egestas nisl, volutpat eu fermentum aliquam eleifend hac arcu massa at donec ornare ad vestibulum taciti quisque, scelerisque nisi diam convallis nec faucibus volutpat, lectus condimentum tempor amet odio nulla, fermentum libero accumsan nulla tortor luctus tortor fringilla nunc nibh tempor faucibus lacinia habitasse mollis eros, tortor netus imperdiet curae torquent fringilla scelerisque senectus mauris elit pretium bibendum inceptos aptent vestibulum egestas viverra convallis, et consequat integer fames cubilia a ad nunc, suscipit nostra platea lacinia lacus potenti senectus.</p>
@@ -135,7 +142,8 @@
 					    <hr>
 					 
 					    <img src="https://source.unsplash.com/category/people" class="post_img">
-					 
+					 	<!-- <img src="" class="post_img"> -->
+
 					    <br/><br/>
 					 
 					    <p class="post_summary">Iaculis euismod dui dictumst pharetra in condimentum vel class orci dolor, et curabitur posuere mauris senectus malesuada egestas torquent laoreet tellus inceptos, in nec proin convallis vulputate dolor conubia integer pretium aliquam fames arcu sagittis porttitor arcu sem tempor, venenatis posuere placerat porta etiam malesuada at, arcu diam libero aptent consequat etiam nisi aliquam molestie potenti lacus tincidunt nisl leo lectus, bibendum rutrum neque habitant vestibulum arcu sociosqu luctus accumsan integer vitae litora congue nunc nisi litora conubia potenti justo, convallis tempus sodales ad blandit porttitor sociosqu sollicitudin neque tortor sed habitasse metus at aenean arcu suscipit</p>
@@ -165,7 +173,7 @@
 						<img src="images/nav_logo.png" id="scribe_logo"><br>
 						Celebrate the little wins!
 						<br>Subscirbe Today<br>
-						<button>SUBSCRIBE</button>
+						<a data-target="#sub_modal" data-toggle="modal"><button>SUBSCRIBE</button></a>
 					</div>
 					<!-- popular -->
 					<div id="pop_entries">
@@ -226,10 +234,100 @@
 					<div id="archive">
 						Archive
 						<div class="bar"></div>
+						<div class="accordion">
+							<a href="#">2017</a>
+							<div class="inner">
+							  <ul>
+							  	<li><a href="#">January</a></li>
+							  	<li><a href="#">February</a></li>
+							  	<li><a href="#">March</a></li>
+							  	<li><a href="#">April</a></li>
+							  	<li><a href="#">May</a></li>
+							  	<li><a href="#">June</a></li>
+							  	<li><a href="#">July</a></li>
+							  	<li><a href="#">August</a></li>
+							  	<li><a href="#">September</a></li>
+							  	<li><a href="#">October</a></li>
+							  	<li><a href="#">November</a></li>
+							  	<li><a href="#">December</a></li>
+							  </ul>
+							</div>
+							  
+							<a href="#">2016</a>
+							<div class="inner">
+							  <ul>
+							  	<li><a href="#">January</a></li>
+							  	<li><a href="#">February</a></li>
+							  	<li><a href="#">March</a></li>
+							  	<li><a href="#">April</a></li>
+							  	<li><a href="#">May</a></li>
+							  	<li><a href="#">June</a></li>
+							  	<li><a href="#">July</a></li>
+							  	<li><a href="#">August</a></li>
+							  	<li><a href="#">September</a></li>
+							  	<li><a href="#">October</a></li>
+							  	<li><a href="#">November</a></li>
+							  	<li><a href="#">December</a></li>
+							  </ul>
+							</div>
+
+							<a href="#">2015</a>
+							<div class="inner">
+							  <ul>
+							  	<li><a href="#">January</a></li>
+							  	<li><a href="#">February</a></li>
+							  	<li><a href="#">March</a></li>
+							  	<li><a href="#">April</a></li>
+							  	<li><a href="#">May</a></li>
+							  	<li><a href="#">June</a></li>
+							  	<li><a href="#">July</a></li>
+							  	<li><a href="#">August</a></li>
+							  	<li><a href="#">September</a></li>
+							  	<li><a href="#">October</a></li>
+							  	<li><a href="#">November</a></li>
+							  	<li><a href="#">December</a></li>
+							  </ul>
+							</div>
+
+							<a href="#">2014</a>
+							<div class="inner">
+							  <ul>
+							  	<li><a href="#">January</a></li>
+							  	<li><a href="#">February</a></li>
+							  	<li><a href="#">March</a></li>
+							  	<li><a href="#">April</a></li>
+							  	<li><a href="#">May</a></li>
+							  	<li><a href="#">June</a></li>
+							  	<li><a href="#">July</a></li>
+							  	<li><a href="#">August</a></li>
+							  	<li><a href="#">September</a></li>
+							  	<li><a href="#">October</a></li>
+							  	<li><a href="#">November</a></li>
+							  	<li><a href="#">December</a></li>
+							  </ul>
+							</div>
+
+							<a href="#">2013</a>
+							<div class="inner">
+							  <ul>
+							  	<li><a href="#">January</a></li>
+							  	<li><a href="#">February</a></li>
+							  	<li><a href="#">March</a></li>
+							  	<li><a href="#">April</a></li>
+							  	<li><a href="#">May</a></li>
+							  	<li><a href="#">June</a></li>
+							  	<li><a href="#">July</a></li>
+							  	<li><a href="#">August</a></li>
+							  	<li><a href="#">September</a></li>
+							  	<li><a href="#">October</a></li>
+							  	<li><a href="#">November</a></li>
+							  	<li><a href="#">December</a></li>
+							  </ul>
+							</div>
+						</div>
 					</div>
 				<!-- </div> -->
 			</div>
-			
 
 			<!-- foot -->
 			<footer>
@@ -242,13 +340,32 @@
 			</footer>
 		</div>
 
-		
+		<!-- modal -->
+		<div class="modal fade" id="sub_modal" role="dialog">
+			<div class="modal-dialog">
+			    <div class="modal-content">
+			    	<div class="modal-header">
+			        	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			        	<img src="images/tab_icon.png">
+			        	<h3>Onwards to victory!</h3>
+			      	</div>
+			      	<div class="modal-body">
+			        	<input type="text" name="email" placeholder="email" id="email_input"> 
+			        	<button id="email_button" type="button" data-dismiss="modal">SUBSCRIBE</button>
+			      	</div>
+			      	<!-- <div class="modal-footer">
+			        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        	<button type="button" class="btn btn-primary">Save changes</button>
+			      	</div> -->
+			    </div>
+			</div>
+		</div>
 
-
-
-		<!-- js -->
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	    <!-- js -->		
 		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
