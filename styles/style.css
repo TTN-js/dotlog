@@ -403,6 +403,10 @@ footer{
 
 /* media query */
 @media(max-width: 1035px){
+	#body, #latest_entries{
+		padding-top: 0px;
+	}
+
 	#bottom_nav{
 		height: 5px;
 		box-shadow: none;
