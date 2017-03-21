@@ -38,7 +38,7 @@
 						        </ul>
 							</div> -->
 						</li>
-						<li id="login"><button>login</button></li>
+						<li id="login" data-target="#login_modal" data-toggle="modal"><button>login</button></li>
 					</ul>
 				</div>
 			</div>
@@ -360,7 +360,7 @@
 			</footer>
 		</div>
 
-		<!-- modal -->
+		<!--Subscribe Modal -->
 		<div class="modal fade" id="sub_modal" role="dialog">
 			<div class="modal-dialog">
 			    <div class="modal-content">
@@ -379,6 +379,28 @@
 			      	</div> -->
 			    </div>
 			</div>
+		</div>
+
+		<!--Login Modal -->
+		  <div class="modal fade" id="login_modal" role="dialog">
+		    <div class="modal-dialog modal-sm">
+		      <div class="modal-content">
+		        <div class="modal-header">
+		        	<button type="button" class="close" data-dismiss="modal">&times;</button>
+		        	<h3>Log In</h3>
+		        	<input type="text" name="email" placeholder="email" id="email_input" style="margin-bottom: 5px;"> 
+		        	<input type="text" name="password" placeholder="password" id="password_input"> 
+		        </div>
+		        <div class="modal-body">
+		        	<button id="login_button" class="btn btn-primary" type="button" data-dismiss="modal">Login</button>
+		        	<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+		        </div>
+		      <!--   <div class="modal-footer">
+		        	
+		        </div> -->
+		      </div>
+		    </div>
+		  </div>
 		</div>
 
 		<!-- jQuery -->
